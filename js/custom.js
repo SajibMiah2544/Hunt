@@ -8,7 +8,7 @@ $(function(){
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 html_body.animate({
-                    scrollTop: target.offset().top - 86
+                    scrollTop: target.offset().top - 100
                 }, 1000);
                 return false;
             }
@@ -175,7 +175,7 @@ $(function(){
     // bootstrap scroll spy
       var scrollSpy = new bootstrap.ScrollSpy(document.body, {
         target: '#navPart',
-        offset: 86,
+        offset: 0,
     })
   var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
   dataSpyList.forEach(function (dataSpyEl) {
